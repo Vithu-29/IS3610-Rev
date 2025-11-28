@@ -66,6 +66,16 @@ export default function App() {
           <NavButton active={activeTab === 'lectures'} onClick={() => { setActiveTab('lectures'); if (isMobile) setSidebarOpen(false); }} icon={<BookOpen size={20} />} label="Lecture Notes" />
           <NavButton active={activeTab === 'tutorials'} onClick={() => { setActiveTab('tutorials'); if (isMobile) setSidebarOpen(false); }} icon={<FileText size={20} />} label="Tutorials" />
           <NavButton active={activeTab === 'pastpapers'} onClick={() => { setActiveTab('pastpapers'); if (isMobile) setSidebarOpen(false); }} icon={<CheckSquare size={20} />} label="Past Paper 2025" />
+          {/* Download 2025 Jan Past Paper */}
+          <a
+            href="public/IS3610_2025_Jan.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 p-3 mt-10 border hover:bg-blue-700 text-white rounded-xl transition-colors"
+          >
+            <FileText size={20} />
+            <span className="text-sm font-medium">Download Jan 2025 Paper</span>
+          </a>
         </nav>
 
         <div className="absolute bottom-0 w-full p-6 bg-slate-950">
