@@ -68,7 +68,7 @@ export default function App() {
           <NavButton active={activeTab === 'pastpapers'} onClick={() => { setActiveTab('pastpapers'); if (isMobile) setSidebarOpen(false); }} icon={<CheckSquare size={20} />} label="Past Paper 2025" />
           {/* Download 2025 Jan Past Paper */}
           <a
-            href="public/IS3610_2025_Jan.pdf"
+            href="./IS3610_2025_Jan.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-2 p-3 mt-10 border hover:bg-blue-700 text-white rounded-xl transition-colors"
